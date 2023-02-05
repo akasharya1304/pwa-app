@@ -83,6 +83,7 @@ const VinylBarcodeDesign = (props) => {
       <div className={classes.UpperContainer}>
         <img
           className={classes.barcodeContainer}
+          alt="barcode"
           src={
             barcodeData.find((d) => d.text === `${props?.barcode}`)?.barcodeUrl
           }
