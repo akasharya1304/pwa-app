@@ -44,6 +44,25 @@
         console.log('Service Worker is not supported by browser.');
       }
     </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBYyaiKMLJQb6fgofGCNsfxPQdwjdW-yXw",
+        authDomain: "office-app-c7976.firebaseapp.com",
+        projectId: "office-app-c7976",
+        storageBucket: "office-app-c7976.appspot.com",
+        messagingSenderId: "610915255813",
+        appId: "1:610915255813:web:2e3d4b08cf026e86ce3e6c"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
