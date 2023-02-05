@@ -121,7 +121,7 @@ const Content = (props) => {
             )}
             pageStyle={`@media print { @page { size: 13in 19in; margin: 0; } }` }
             content={() => componentRef.current}
-            print={handleSuperBPagePreview}
+            // print={handleSuperBPagePreview}
           />
         </div>
       </div>
