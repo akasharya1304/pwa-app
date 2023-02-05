@@ -9,8 +9,8 @@
     },
     {
       "src": "/images/maskable_icon.png",
-      "sizes": "196x196",
       "type": "image/png",
+      "sizes": "196x196",
       "purpose": "maskable"
     }
   ],
