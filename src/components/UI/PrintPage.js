@@ -97,15 +97,10 @@ let PrintPage = (props) => {
                 <Grid item container className='printButtonContainer'  >
                     <ReactToPrint
                         xs={8}
-                        trigger={() => <button className='printButton'>Print - Page</button>}
-                        content={() => componentRef.current}
-                        print={handlePrintPage}
-                    />
-                    <ReactToPrint
-                        xs={8}
                         trigger={() => <button className='printButton'>Preview - Page</button>}
+                        pageStyle={`@media print { @page { size: 8.071in 11.42in ;  margin-left: 2mm ; margin-bottom: 5mm; margin-top: 0; margin-right: 0; } }` }
                         content={() => componentRef.current}
-                        print={handlePreviewPage}
+                        // print={handlePreviewPage}
                     />
                 </Grid>
             </Grid>

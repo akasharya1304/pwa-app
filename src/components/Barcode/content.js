@@ -149,8 +149,9 @@ const Content = (props) => {
             trigger={() => (
               <button className="printButton">Preview - Page</button>
             )}
+            pageStyle={`@media print { @page { size: Legal ; margin: 0; } }` }
             content={() => componentRef.current}
-            print={handleLegalPagePreview}
+            // print={handleLegalPagePreview}
           />
         </div>
       </div>

@@ -102,18 +102,9 @@ const Content = (props) => {
           <ReactToPrint
             xs={8}
             trigger={() => (
-              <button className="printButton">Print - Page</button>
-            )}
-            // pageStyle="@page { size: 8.07in 11.69in; margin: `0.4in` }"
-            content={() => componentRef.current}
-            // print={handlePrintPage}
-          />
-          <ReactToPrint
-            xs={8}
-            trigger={() => (
               <button className="printButton">Preview - Page</button>
             )}
-            // pageStyle="@page { size: 8.07in 11.69in; margin: 0; }"
+            pageStyle="@page { size: 8.07in 11.69in; margin: 0; }"
             content={() => componentRef.current}
             // print={handlePreviewPage}
           />

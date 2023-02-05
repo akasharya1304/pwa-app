@@ -207,14 +207,10 @@ let TableData = (props) => {
                 <Grid item container style={{display: `${displayValue}` }}>
                     <Grid item container className='printButtonContainer'  >
                         <ReactToPrint
-                            trigger={() => <button className='printButton'>Print - ARTWORK</button>}
-                            content={() => componentRef.current}
-                            print={handlePrint}
-                        />
-                        <ReactToPrint
                             trigger={() => <button className='printButton'>Preview - ARTWORK</button>}
+                            pageStyle={`@media print { @page { size: A4 landscape } }` }
                             content={() => componentRef.current}
-                            print={handlePreview}
+                            // print={handlePreview}
                         />
                     </Grid>
                 </Grid>
