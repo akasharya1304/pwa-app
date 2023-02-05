@@ -7,7 +7,7 @@ import InputPage from "./InputPage";
 const useStyles = makeStyles((theme) => ({
   inputContainer: {
     display: "flex",
-    marginBottom: 80,
+    // marginBottom: 80,
   },
   printBox: {
     display: "flex",

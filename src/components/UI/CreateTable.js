@@ -192,37 +192,6 @@ let CreateTable = (props) => {
                         })
                     }
                 </Grid>
-                {/* 
-                <Grid ref={componentRef} className={classes.artworkBox}>
-                    {
-                        artwork.map(boxItem => {
-                            return (
-                                <DisplayBox 
-                                    key={boxItem[0]}
-                                    id={boxItem[0] -1}
-                                    date='02-02-2022'
-                                    Title={boxItem[1]}
-                                    colour={boxItem[2]}
-                                    circle={boxItem[3]}
-                                />
-                            )
-                        })
-                    }
-                </Grid>
-                <Grid item container className='printButtonContainer'>
-                    <ReactToPrint
-                        xs={8}
-                        trigger={() => <button className='printButton'>Print</button>}
-                        content={() => componentRef.current}
-                        print={handlePrint}
-                    />
-                    <ReactToPrint
-                        xs={8}
-                        trigger={() => <button className='printButton'>Preview</button>}
-                        content={() => componentRef.current}
-                        print={handlePreview}
-                    />
-                </Grid>*/}
             </Grid> 
         </Grid>   
     )

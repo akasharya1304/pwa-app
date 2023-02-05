@@ -75,15 +75,9 @@ let ArtworkTable = (props) => {
                 <Grid item container className='printButtonContainer'>
                     <ReactToPrint
                         xs={8}
-                        trigger={() => <button className='printButton'>Print Table</button>}
-                        content={() => componentRefExcelTable.current}
-                        print={handlePrint}
-                    />
-                    <ReactToPrint
-                        xs={8}
                         trigger={() => <button className='printButton'>Preview Table</button>}
                         content={() => componentRefExcelTable.current}
-                        print={handlePreview}
+                        // print={handlePreview}
                     />
                 </Grid>
             </Grid>

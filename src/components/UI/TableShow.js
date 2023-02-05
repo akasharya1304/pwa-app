@@ -96,14 +96,9 @@ let TableShow = (props) => {
                 </TableContainer>
                 <Grid item container className='printButtonContainer'>
                     <ReactToPrint
-                        trigger={() => <button className='printButton'>Print Table</button>}
-                        content={() => componentRefExcelTable.current}
-                        print={handlePrint}
-                    />
-                    <ReactToPrint
                         trigger={() => <button className='printButton'>Preview Table</button>}
                         content={() => componentRefExcelTable.current}
-                        print={handlePreviewTable}
+                        // print={handlePreviewTable}
                     />
                 </Grid>
             </Grid>
