@@ -71,19 +71,19 @@ let PrintPage = (props) => {
 
   return (
     <Grid item container className={classes.PageOuterContainer}>
-    <span style={{ position: 'absolute' }}>
-      <Chip
-        label="size 8"
-        style={{ backgroundColor: size === "8" ? "#2e7d32" : "#fff" }}
-        variant={size === "10" && "outlined"}
-        onClick={(e) => setSize("8")}
-      />
-      <Chip
-        label="size 10"
-        style={{ backgroundColor: size === "10" ? "#2e7d32" : "#fff" }}
-        variant={size === "8" && "outlined"}
-        onClick={(e) => setSize("10")}
-      />
+      <span style={{ position: "absolute" }}>
+        <Chip
+          label="size 8"
+          style={{ backgroundColor: size === "8" ? "#2e7d32" : "#fff" }}
+          variant={size === "10" && "outlined"}
+          onClick={(e) => setSize("8")}
+        />
+        <Chip
+          label="size 10"
+          style={{ backgroundColor: size === "10" ? "#2e7d32" : "#fff" }}
+          variant={size === "8" && "outlined"}
+          onClick={(e) => setSize("10")}
+        />
       </span>
       <Grid
         item
@@ -102,7 +102,7 @@ let PrintPage = (props) => {
               us_styles={
                 size === "8" ? (page < 4 ? "3px" : "0") : page < 3 ? "3px" : "0"
               }
-              uk_styles={ size === "8" ? (page < 2 ? "3px" : "0") : "0" }
+              uk_styles={size === "8" ? (page < 2 ? "3px" : "0") : "0"}
               colour={props.colour}
               circle={props.circle}
             />
