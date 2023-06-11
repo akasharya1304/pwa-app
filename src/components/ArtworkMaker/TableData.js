@@ -2,7 +2,7 @@ import {useRef, useState } from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Button, FormControl, FormControlLabel, Paper,Radio,RadioGroup,Table, TableBody, TableCell, TableContainer, TableHead, TableRow,} from '@material-ui/core';
+import { Button, Chip, FormControl, FormControlLabel, Paper,Radio,RadioGroup,Table, TableBody, TableCell, TableContainer, TableHead, TableRow,} from '@material-ui/core';
 
 import ReactToPrint from 'react-to-print';
 import DisplayBox from '../UI/DisplayBox';
@@ -86,6 +86,7 @@ let TableData = (props) => {
     let artworkData = props.data;
     const [displayValue , setDisplayValue] = useState('none');
     const [artwork, setArtwork] = useState([]);
+    const [size, setSize] = useState('10');
 
     function handleCircleRadio(event) {
         const {name , value} = event.target;
@@ -187,11 +188,14 @@ let TableData = (props) => {
                     </Button>
                 </Grid>
                 <ArtworkTable  displayValues={displayValue} TableData={artwork}/>
+                <Chip label="size 8" style={{ backgroundColor: size === '8' ? '#2e7d32' : "#fff" }} variant={ size === '10' && 'outlined'} onClick={(e) => setSize('8')} />
+                <Chip label="size 10" style={{ backgroundColor: size === '10' ? '#2e7d32' : "#fff" }} variant={ size === '8' && 'outlined'} onClick={(e) => setSize('10')} />
                 <Grid ref={componentRef} className={classes.artworkBox}>
                     {
                         artwork.map((boxItem,index) => {
                             return (
                                 <DisplayBox 
+                                    artworkSize={size}
                                     key={index*1000 + 1}
                                     id={boxItem[0] -1}
                                     date={date}
